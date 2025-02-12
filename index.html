@@ -27,26 +27,37 @@
         }
 
         .navbar {
-            position: fixed;
-            width: 100%;
-            padding: 1rem;
-            background: rgba(10, 10, 10, 0.98);
-            backdrop-filter: blur(15px);
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 68, 68, 0.1);
-        }
+    position: fixed;
+    width: 100%;
+    padding: 0; /* Remove extra padding to simplify centering */
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 68, 68, 0.1);
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 70px; /* Define a consistent height for better alignment */
+}
 
-        .nav-links a, .partner-card h3 a, .partner-card p a {
-    color: #fff; /* Set a custom color for links */
+.nav-links {
+    display: flex;
+    gap: 2rem; /* Space between the links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #fff;
     text-decoration: none;
+    font-size: 1rem;
     transition: color 0.3s ease;
-    font-size: 0.9rem;
 }
 
-.nav-links a:hover, .partner-card h3 a:hover, .partner-card p a:hover {
-    color: var(--secondary); /* Change color on hover */
+.nav-links a:hover {
+    color: var(--secondary);
 }
-
         .hero {
             min-height: 100vh;
             display: flex;
