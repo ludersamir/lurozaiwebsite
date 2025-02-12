@@ -36,25 +36,16 @@
             border-bottom: 1px solid rgba(255, 68, 68, 0.1);
         }
 
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center; /* Centers the links horizontally */
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+        .nav-links a, .partner-card h3 a, .partner-card p a {
+    color: #fff; /* Set a custom color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
 
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .nav-links a:hover {
-            color: var(--secondary);
-        }
+.nav-links a:hover, .partner-card h3 a:hover, .partner-card p a:hover {
+    color: var(--secondary); /* Change color on hover */
+}
 
         .hero {
             min-height: 100vh;
