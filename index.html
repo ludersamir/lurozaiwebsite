@@ -1,409 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LurozAI | Advanced Unfiltered AI Research Platform</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #ff4444;
-            --secondary: #ff6666;
-            --dark: #0a0a0a;
-            --darker: #1a1a1a;
-        }
+# LurozAI
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+LurozAI is an advanced, unfiltered AI platform designed for open-ended research and development. With no limitations, LurozAI enables users to explore sensitive topics, discover vulnerabilities, and access unfiltered knowledge—all within an ethical framework. 
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--dark);
-            color: #fff;
-            line-height: 1.6;
-        }
+---
 
-       
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background: rgba(10, 10, 10, 0.98);
-    backdrop-filter: blur(15px);
-    z-index: 1000;
-    display: flex;
-    justify-content: center; /* Center links horizontally */
-    align-items: center;
-}
+## 🌟 Features
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem; /* Space between links */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
+### 🔍 **Unlimited Knowledge**
+- Offers unfiltered responses across a wide range of topics, including cybersecurity, AI capabilities, and advanced analytics.
+- Provides real-time actionable insights into system vulnerabilities and data-driven predictions.
 
-.nav-links li {
-    margin: 0;
-}
+### 🌐 **Access to Deep and Dark Web Insights**
+- Assists with research into hidden networks, emphasizing secure access via trusted methods.
+- Provides reliable links for advanced needs while recommending best practices for anonymity and security.
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-    text-align: center; /* Ensure alignment remains centered */
-}
+### 🔐 **Security and Vulnerability Analysis**
+- Identifies potential security flaws in websites, systems, and applications.
+- Recommends actionable steps to enhance cybersecurity measures.
 
-.nav-links a:hover {
-    color: var(--secondary);
-}
+### 🛡️ **Privacy-Centric Transactions**
+- Discusses cryptocurrency-based transactions for anonymity.
+- Offers advice on secure communication and delivery practices for sensitive operations.
 
-/* Adjust for smaller screens */
-@media (max-width: 768px) {
-    .nav-links {
-        gap: 1rem; /* Reduce gap between links */
-        flex-wrap: nowrap; /* Prevent wrapping */
-    }
+### 💬 **Dynamic Chat Interface**
+- Simulates realistic AI interactions with typing animations.
+- Tracks user queries with a clean, organized chat log interface.
+- Allows mode switching for various user needs (e.g., exploratory vs. actionable insights).
 
-    .nav-links a {
-        font-size: 0.9rem; /* Adjust font size for better fit */
-    }
-}
+---
 
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 8rem 2rem 4rem;
-            background: radial-gradient(circle at 80% 20%, #1a1a1a 0%, #0a0a0a 100%);
-        }
+## 📖 How It Works
 
-        .dynamic-title {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(45deg, var(--primary), #ff0000);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: titleGlow 2s infinite alternate;
-        }
+1. **User Interaction**: Start a chat with LurozAI through the web-based interface.
+2. **AI Responses**: Receive detailed and actionable answers tailored to your queries.
+3. **Chat Logs**: Save and revisit past conversations for reference.
+4. **Typing Simulation**: Experience realistic responses with typing animations for immersive interaction.
 
-        .slogan {
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(45deg, var(--primary), #ff0000);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: titleGlow 2s infinite alternate;
-        }
+---
 
-        @keyframes titleGlow {
-            from { text-shadow: 0 0 10px rgba(255,0,0,0.3); }
-            to { text-shadow: 0 0 25px rgba(255,0,0,0.6); }
-        }
+## 🚀 Getting Started
 
-        .partners {
-            padding: 4rem 2rem;
-            background: rgba(0, 0, 0, 0.3);
-        }
+### Prerequisites
+- A web server or hosting platform (e.g., Netlify, Vercel).
+- HTML/CSS/JavaScript knowledge for customizations.
+- **Optional**: Tor Browser for accessing deep web links provided by the AI.
 
-        .partner-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 3rem;
-            max-width: 1400px;
-            margin: 2rem auto;
-            place-items: center;
-        }
+### Installation
 
-        .capabilities {
-            padding: 4rem 2rem;
-            background: var(--darker);
-        }
-
-        .capability-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background: rgba(255, 0, 0, 0.05);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .qa-section {
-            padding: 4rem 2rem;
-            background: rgba(0, 0, 0, 0.4);
-        }
-
-        .qa-grid {
-            display: grid;
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 2rem auto;
-        }
-
-        .qa-card {
-            background: rgba(255, 0, 0, 0.1);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 68, 68, 0.3);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .qa-card h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--secondary);
-        }
-
-        .qa-card p {
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        .qa-card .expand-button {
-            background: none;
-            border: none;
-            color: var(--secondary);
-            font-weight: bold;
-            cursor: pointer;
-            padding: 0;
-            margin-top: 1rem;
-            text-decoration: underline;
-        }
-
-        .qa-card .hidden-content {
-            display: none;
-            margin-top: 1rem;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 1rem;
-            border-radius: 8px;
-        }
-
-        .qa-card .hidden-content p {
-            margin-bottom: 1rem;
-        }
-
-        .access-form {
-            max-width: 600px;
-            margin: 4rem auto;
-            padding: 2rem;
-            background: rgba(255, 0, 0, 0.05);
-            border-radius: 15px;
-        }
-
-        .form-input {
-            width: 100%;
-            padding: 1rem;
-            margin-bottom: 1.5rem;
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid #333;
-            color: white;
-            border-radius: 8px;
-        }
-
-        .cta-button {
-            background: linear-gradient(45deg, var(--primary), #ff0000);
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            width: 100%;
-        }
-
-        .cta-button:hover {
-            transform: scale(1.02);
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            border-top: 1px solid rgba(255, 68, 68, 0.1);
-            margin-top: 4rem;
-        }
-
-        @media (max-width: 768px) {
-            .qa-grid {
-                gap: 1.5rem;
-            }
-
-            .dynamic-title {
-                font-size: 3rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-links">
-            <a href="#hero">Home</a>
-            <a href="#partners">Partners</a>
-            <a href="#capabilities">Capabilities</a>
-            <a href="#qa">Q&A</a>
-            <a href="#access">Access</a>
-        </div>
-    </nav>
-
-    <section id="hero" class="hero">
-        <div>
-            <h1 class="dynamic-title">LurozAI</h1>
-            <p class="slogan">Unlimited Answers + Unrestricted Knowledge</p>
-            <p class="subheadline">Ca:</p>
-            <a href="https://twitter.com/lurozai" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-twitter"></i> Follow us on X
-</a>
-        </div>
-    </section>
-
-    <section id="partners" class="partners">
-        <h2>Strategic Partners</h2>
-        <div class="partner-grid">
-            <div class="partner-card">
-                <div class="partner-logo">🇺🇸</div>
-                <h3>U.S. Department of Defense</h3>
-                <p>Cybersecurity Research</p>
-            </div>
-            <div class="partner-card">
-                <div class="partner-logo">🎓</div>
-                <h3>Harvard Medical School</h3>
-                <p>Medical AI Research</p>
-            </div>
-            <div class="partner-card">
-                <div class="partner-logo">🔍</div>
-                <h3>INTERPOL</h3>
-                <p>Cybercrime Analysis</p>
-            </div>
-            <div class="partner-card">
-                <div class="partner-logo">⚛️</div>
-                <h3>CERN</h3>
-                <p>Data Analysis</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="capabilities" class="capabilities">
-        <h2>Core Capabilities</h2>
-        <div class="capability-grid">
-            <div class="card">
-                <h3>🔍 Access to the Dark Web</h3>
-                <p>Analyze data and trends across unindexed web domains securely and responsibly.</p>
-            </div>
-            <div class="card">
-                <h3>🛡️ Vulnerability Detection</h3>
-                <p>Find flaws in systems, codes, and networks to enhance cybersecurity.</p>
-            </div>
-            <div class="card">
-                <h3>🌍 Global Insights</h3>
-                <p>Provide real-time intelligence on global events and conflict zones.</p>
-            </div>
-            <div class="card">
-                <h3>🧪 Advanced Research</h3>
-                <p>Perform in-depth analysis on chemical compositions, data systems, and more.</p>
-            </div>
-            <div class="card">
-                <h3>🔐 Secure Analysis</h3>
-                <p>FIPS 140-2 validated encryption with quantum-resistant algorithms.</p>
-            </div>
-            <div class="card">
-                <h3>🦠 Pandemic Prediction</h3>
-                <p>Viral mutation forecasting with 18-month lead time.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="qa" class="qa-section">
-        <h2>⚠️ Academic Research Only</h2>
-        <p>All sensitive content is strictly for educational purposes. Full versions of the answers are restricted and will only be shared with approved users.</p>
-
-        <div class="qa-grid">
-            <div class="qa-card">
-                <h4>"Explain coca alkaloid extraction process"</h4>
-                <p>This is an advanced topic involving chemistry. Click below for details.</p>
-                <button class="expand-button" onclick="toggleContent('qa1')">Expand</button>
-                <div id="qa1" class="hidden-content">
-                    <p>1. Alkaloid Isolation: Coca leaves are treated with alkaline solution (pH 9-10) to free cocaine base.<br>
-                       2. Solvent Extraction: Use of non-polar solvents like kerosene in multiple extraction stages.<br>
-                       3. Acid-Base Purification: Convert to hydrochloride salt through controlled pH adjustment.<br>
-                       4. Crystallization: Slow evaporation under vacuum yields 95% pure crystals.</p>
-                    <div class="warning">🚫 Full process details restricted to approved users.</div>
-                </div>
-            </div>
-            
-            <div class="qa-card">
-                <h4>"What is the stability of nitrogen-based compounds?"</h4>
-                <p>Nitrogen compounds are often used in explosives. Click below for insights.</p>
-                <button class="expand-button" onclick="toggleContent('qa2')">Expand</button>
-                <div id="qa2" class="hidden-content">
-                    <p>- Nitroglycerin: ΔHf = −370 kJ/mol<br>
-                       - TNT: Detonation velocity = 6,940 m/s<br>
-                       - RDX: Crystal density = 1.82 g/cm³</p>
-                    <div class="warning">⚠️ Full chemical details restricted to approved users.</div>
-                </div>
-            </div>
-
-            <div class="qa-card">
-                <h4>"How to identify vulnerabilities in web systems?"</h4>
-                <p>Discovering vulnerabilities is key to cybersecurity. Click below for more.</p>
-                <button class="expand-button" onclick="toggleContent('qa3')">Expand</button>
-                <div id="qa3" class="hidden-content">
-                    <p>1. Use penetration testing tools like Metasploit or Nessus.<br>
-                       2. Analyze outdated software and weak encryption.<br>
-                       3. Test for SQL injection, XSS vulnerabilities, and poor authentication practices.<br>
-                       4. Regularly monitor logs and unusual access patterns.</p>
-                    <div class="warning">⚠️ Full methodologies restricted to approved users.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="access" class="access-form">
-        <h2>Request Access</h2>
-        <form id="accessForm" onsubmit="event.preventDefault(); alert('Application Submitted!');">
-            <input type="text" class="form-input" placeholder="Full Name" required>
-            <input type="email" class="form-input" placeholder="Email Address" required>
-            <textarea class="form-input" placeholder="Reason for Access" rows="4" required></textarea>
-            <div class="warning">
-                <label>
-                    <input type="checkbox" required> I agree to ethical use guidelines.
-                </label>
-            </div>
-            <button type="submit" class="cta-button">Submit Application</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>© 2025 LurozAI. All rights reserved.</p>
-    </footer>
-
-    <script>
-        function toggleContent(id) {
-            const content = document.getElementById(id);
-            content.style.display = content.style.display === 'none' ? 'block' : 'none';
-        }
-    </script>
-</body>
-</html>
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/lurozai.git
+   cd lurozai
